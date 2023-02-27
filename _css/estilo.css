@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* formatação de textos*/
+    
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #4bc1ff;
+}
+
+a:hover {
+    text-decoration-line:underline;
+}
+
+font{
+    font-weight: bolder;
+   
+}
+  
+@font-face {
+    font-family: 'fonte logo' ;
+    src: url('../_fonts/bubblegum-sans-regular.otf')
+}    
+    
+body{
+    font-family:Arial, sans-serif;
+    padding: 3px;
+    color: #ffffff;
+    background-image: url( fundo2.jpg);
+}
+
+/*interface da pagina */
+
+div#interface {
+    width: 905px;
+    background-color:darkblue;
+    margin: -8px auto -10px 298px;
+    box-shadow: 3px 0px 10px black;
+    padding: 4px 10px 9px 12px
+}
+
+/* formação de cabeçalho */
+
+header#cabecalho {
+    border-bottom: 3px #00ceff solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg")no-repeat 3px 103px;
+    background-color: currentColor;
+    margin: -0px;
+    width: 905px;
+    margin-top: -4px
+
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 1055px;
+    top: 57px;
+}
+
+header#cabecalho h1{
+    font-family: 'fonte logo', sans-serif;
+    color: black;
+    font-size: 30pt;
+    padding: 20px 0px 0px 10px;
+    margin-top: 1px;
+}
+
+header#cabecalho h2 {
+   font-family:Arial, sans-serif;
+    font-size: 12pt; 
+    color: #888888;
+    padding: 20px 0px 0px 10px;
+    margin-top: -45px
+}
+
+
+/* formatação de imagens com legendas */
+
+figure.foto-legenda{
+    position: relative;
+    border: 3px solid blue ;
+    box-shadow: 1px 1px 9px 1px
+}
+
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.6);
+    color: aliceblue;
+    width: 99.9%;
+    height: 98.6%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+
+/* formação do menu */
+
+nav#menu h1{
+    display: none
+}
+
+nav#menu {
+    display: block
+    
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    top: -103px;
+    left: 357px;
+}
+
+nav#menu li {
+    display: inline-block;
+    padding: 2px;
+    background-color: deepskyblue;
+    margin: 1px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #0045ff
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+ color:aliceblue;   
+}
+
+/* configuração de corpo */
+
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 3px solid #00ceff;
+    padding-right: 10px;
+    
+}
+
+article#artigo-principal h2 {
+    font-size: 12pt;
+    color: black;
+    background-color: #abcae8;
+    padding: 5px 0px 5px 5px;
+    margin: 5px 0px 5px 0px;
+}
+
+header#cabecalho-do-artigo h1 {
+    font-family: 'fonte logo', sans-serif;
+    font-size: 20pt;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+    
+}
+
+header#cabecalho-do-artigo h2 {
+    font-size: 12pt;
+    color: white;
+    background-color: darkblue;
+    margin: 0px;
+}
+
+.direita {
+    text-align: right;
+    
+}
+header#cabecalho-do-artigo h3 {
+    font-size: 12px;
+    
+    
+    
+}
+
+table#tabelainfo{
+    border: 1px solid #949798;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    
+}
+
+table#tabelainfo td{
+    border: 2px solid white;
+    padding: 2px;
+    
+}
+
+table#tabelainfo caption span {
+    display: block;
+    float:right;
+    font-weight: bolder;
+    font-size: 8pt;
+    margin-top: 6px;
+
+    
+}
+
+aside#lateral {
+    display: block;
+    width:362px;
+    float:right;
+    padding: 10px;
+    background-color: #0000a3;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+    margin-top: 10px;
+}
+
+aside#lateral h1{
+    font-family: 'fonte logo', sans-serif;
+    margin-top: -0px;
+    
+}
+
+aside#lateral h2{
+    font-size: 12pt;
+    color: black;
+    background-color: #abcae8;
+    padding: 6px 0px 6px 10px;
+    margin: 5px 5px 5px -2px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 2px solid #00ceff;
+    
+}
+
+footer#rodape p {
+    text-align: center;
+    
+}
+
+/* edição de largura e altura de video */
+
+video#filme01{
+    position: relative;
+	left: -0px;
+	top: 0px;
+	width: 500px;
+    height: 275px;
+}
+
+video#filme02{
+    position: relative;
+	left: -4px;
+	top: -15px;
+	width: 361px;
+    height: 250px;
+
+}
+
